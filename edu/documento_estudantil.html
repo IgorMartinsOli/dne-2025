@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+.card-container {
+    position: relative;
+    width: 360px;
+    max-width: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+.card-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://suap.ifgoiano.edu.br/static/edu/img/brazao_carteirinha.jpg");
+    background-repeat: no-repeat;
+    background-size: 180% auto;
+    background-position: 120% center;
+    opacity: 0.25;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.card-container * {
+    position: relative;
+    z-index: 1;
+}
+
+.card-header {
+    background: #d9262c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.photo-box {
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+.photo-box img {
+    width: 140px;
+    max-width: 60vw;
+    border-radius: 8px;
+    border: 3px solid #eee;
+}
+
+.logo-IF {
+    display: flex;
+    justify-content: center;
+}
+.logo-IF img {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 14rem;
+    width: 100%;
+    height: auto;
+}
+
+.info-section {
+    padding: 10px 20px;
+}
+
+.info-title {
+    color: #13921e;
+    font-size: 0.85rem;
+    margin-top: 8px;
+    font-weight: bold;
+}
+.info-value {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.separator {
+    height: 2px;
+    background: #e0e0e0;
+    margin: 15px 0;
+}
+
+.footer-section {
+    padding: 15px 20px;
+    font-size: 0.85rem;
+}
+
+.assinatura {
+    position: relative;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.assinatura img {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.nome-reitor {
+    text-align: center;
+    margin-top: 10px;
+    border-top: 1px solid #000000;
+    padding-top: 5px;
+    font-size: 0.9rem;
+}
+
+.qrcode {
+    text-align: center;
+    margin-top: 25px;
+}
+.qrcode img {
+    width: 110px;
+    max-width: 40vw;
+}
+
+@media (max-width: 480px) {
+    body { padding: 5px; }
+    .card-container { width: 100%; border-radius: 8px; }
+    .card-header { font-size: 1rem; padding: 8px; }
+    .photo-box img { width: 120px; max-width: 50vw; }
+    .info-section { padding: 8px 15px; }
+    .info-value { font-size: 0.95rem; }
+    .qrcode img { width: 90px; max-width: 35vw; }
+}
+</style>
+</head>
+<body>
+<div class="card-container">
+    <div class="card-header">IDENTIDADE ESTUDANTIL</div>
+
+    <div class="photo-box">
+        <img src="https://i.ibb.co/nspGHk8s/Whats-App-Image-2026-06-01-at-23-05-42.jpg" alt="Foto de Igor Martins de Oliveira">
+    </div>
+
+    <div class="info-section">
+        <div class="logo-IF">
+            <img src="https://suap.ifgoiano.edu.br/static/edu/img/IFGOIANO-02.png"" alt="Logo do IF Goiano">
+        </div>
+        <div class="info-title">NOME</div>
+        <div class="info-value">Igor Martins de Oliveira</div>
+
+        <div class="info-title">MATRÍCULA</div>
+        <div class="info-value">2019104211710146</div>
+
+        <div class="info-title">CURSO</div>
+        <div class="info-value">[MO.GRAD] Sistemas Para Internet - Morrinhos</div>
+
+        <div class="info-title">UNIDADE</div>
+        <div class="info-value">Campus Morrinhos</div>
+
+        <div class="info-title">SITUAÇÃO</div>
+        <div class="info-value">Matriculado</div>
+
+        <div class="info-title">VALIDADE</div>
+        <div class="info-value">Dez / 2026</div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="info-section">
+        <div class="info-title">DATA DE NASCIMENTO</div>
+        <div class="info-value">19/12/2000</div>
+
+        <div class="info-title">REGISTRO GERAL</div>
+        <div class="info-value">6677125</div>
+
+        <div class="info-title">CPF</div>
+        <div class="info-value">701.565.171-83</div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="footer-section">
+        <div class="assinatura">
+            <img src="https://suap.ifgoiano.edu.br/static/edu/img/assinatura_reitor.png" alt="Assinatura do Reitor">
+        </div>
+        <p class="nome-reitor">Elias de Pádua Monteiro – Reitor do IF Goiano</p>
+        <div class="qrcode">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAAEiAQAAAAB1xeIbAAABgUlEQVR4nO2aS26EMBBEX8dIs2SkHICjeG6QK8NRuAHsPaosjDM/RcmG4ddeIGw9yaXGale3MPH36D7+AYFTTjnllFNrp2waFWbnq8FYVi6L6joEFSVJA0gDAEGSpEfq/boOQY3TGbfLWJHfzKrlde2Zqp7m6ppUiXG+HZ36lYoD2OWdOx6eqiW1TDkHAElpeV17pqZAdwZAAAjJ4GrL6joClWN/ayyoaxJQP7Ya1qp+2xTZSsYhFI+ZR0IagrL5bNeqftsUdzY+KuW7Vi0hp//8ITz2s1Dl3OeDDmrrBJSHx/4dVJBZIxH7CrXjKeeh5XXtmJru2s5AjIa6r1TZM7VW9dumJo8ZBVALi/2pnPbxsxj8tarfNnV/10JQrrJUbI/7nBmpn7v2FvHwMPXYz06VPiZdk1A7mpk1iby2evW7oa5Gdy7+vl2Prt1Rzz1ki32FUQ8Qe4PYLqPrCNRrvlfKde1Ub3m+n4168TmxdI5zhes+Zz7K/N8op5xyyqlDUN+QnfzcAXif2gAAAABJRU5ErkJggg==">
+        </div>
+    </div>
+</div>
+</body>
+</html>
