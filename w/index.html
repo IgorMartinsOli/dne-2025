@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de CIE - Meia-entrada.org.br</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://i.ibb.co/pjGrKRXv/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co/pjGrKRXv/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.ibb.co/pjGrKRXv/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        body {
+            font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #f5f5f5;
+        }
+        .mainNavbar {
+            background: linear-gradient(135deg, #487c99 0%, #356780 100%);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .navbar-brand img { height: 80px; }
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            padding: 1.5rem 1rem !important;
+            transition: all 0.3s;
+        }
+        .nav-link:hover, .nav-link.active { background-color: rgba(255,255,255,0.1); }
+        .page-content {
+            margin-top: 100px;
+            min-height: calc(100vh - 300px);
+        }
+        .meiaentrada-title {
+            background: linear-gradient(135deg, #487c99 0%, #356780 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 0 !important;
+        }
+        .meiaentrada-title h1 { font-size: 2rem; margin: 0; font-weight: 500; }
+        .meiaentrada-title .small { font-size: 1rem; opacity: 0.9; }
+        .alert-success {
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+            color: #155724;
+        }
+        .alert-heading { font-size: 1.5rem; font-weight: 500; }
+        .certificate-container {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        .certificate {
+            font-family: 'Courier New', monospace;
+            font-size: 0.8rem;
+            word-break: break-all;
+            display: block;
+            color: #333;
+        }
+        .main-footer {
+            background: linear-gradient(135deg, #2c5368 0%, #1a3d4f 100%);
+            color: white;
+            margin-top: 3rem;
+        }
+        .main-footer a { color: #a8d0e6; text-decoration: none; transition: color 0.3s; }
+        .main-footer a:hover { color: white; }
+        .main-footer ul { list-style: none; padding: 0; }
+        .font-title { font-weight: 500; letter-spacing: 1px; }
+        .rounded { border-radius: 10px !important; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .border { background-color: white; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark fixed-top mainNavbar py-0">
+            <div class="container">
+                <a class="navbar-brand logo-link py-0" href="/">
+                    <img src="https://assets.meiaentrada.org.br/static/media/logo-meia-entrada.1880ce37.svg" height="80" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/lei">Lei da Meia-entrada</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="/validador">Validação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/chaves-publicas">Chaves públicas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/perguntas-e-respostas">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/noticias">Notícias</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-content">
+        <section class="py-5">
+            <div class="meiaentrada-title mb-5">
+                <div class="container">
+                    <h1>Validação de CIE <span class="small">(Carteira de Identificação Estudantil)</span></h1>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="alert alert-success text-center" role="alert">
+                    <h4 class="alert-heading my-3">✓ Documento válido!</h4>
+                </div>
+
+                <div>
+                    <p class="text-center">UNE atesta que <strong>Wallisson Martins de Souza</strong> é estudante e está regularmente matriculado(a) em <strong>Nutrição</strong> da instituição <strong>Universidade Pitagoras Unopar</strong></p>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-lg-10 col-md-8">
+                        <div class="row border border-left-0 border-right-0 py-2">
+                            <div class="col-md-3 text-md-right"><b>Nome:</b></div>
+                            <div class="col-md-9">Wallisson Martins de Souza</div>
+                        </div>
+                        <div class="row border border-left-0 border-right-0 border-top-0 py-2">
+                            <div class="col-md-3 text-md-right"><b>Instituição:</b></div>
+                            <div class="col-md-9">Universidade Pitagoras Unopar</div>
+                        </div>
+                        <div class="row border border-left-0 border-right-0 border-top-0 py-2">
+                            <div class="col-md-3 text-md-right"><b>Curso:</b></div>
+                            <div class="col-md-9">Nutrição</div>
+                        </div>
+                        <div class="row border border-left-0 border-right-0 py-2">
+                            <div class="col-md-3 text-md-right"><b>Documento de Identificação:</b></div>
+                            <div class="col-md-9">05259110145</div>
+                        </div>
+                        <div class="row border border-left-0 border-right-0 border-top-0 py-2">
+                            <div class="col-md-3 text-md-right"><b>Emissor:</b></div>
+                            <div class="col-md-9">UNE</div>
+                        </div>
+                    </div>
+                    <div class="col-4 mx-auto col-lg-2 col-md-4">
+                        <img class="rounded img-fluid" src="https://i.ibb.co/FbPrhnWt/83e95035-38e2-4751-80a2-f6668b9b2776.jpg" alt="Wallisson Martins de Souza">
+                    </div>
+                </div>
+
+                <h5>Certificado de Atributo em formato PEM:</h5>
+                <div class="certificate-container">
+                    <p class="text-center">-----BEGIN CERTIFICATE-----</p>
+                    <span class="certificate">
+                        MIID7TCCAtUCAQEwcqBwMGukaTBnMQswCQYDVQQGEwJCUjETMBEGA1UECgwKSUNQLUJyYXNpbDEm
+                        MCQGA1UECwwdVU5JQU8gTkFDSU9OQUwgRE9TIEVTVFVEQU5URVMxGzAZBgNVBAMMEkNhcmxvcyBF
+                        ZHVhcmRvIE1lbmRlcwIBAaCBzjCBy6SByDCBxTELMAkGA1UEBhMCQlIxEzARBgNVBAoMCklDUC1C
+                        cmFzaWwxFzAVBgNVBAsMDjE4MzI3NjU0MDAwMTQyMRkwFwYDVQQLDBBWaWRlb2NvbmZlcmVuY2lh
+                        MQ4wDAYDVQQLDAVWQUxJRDEbMBkGA1UECwwSUGVzc29hIEp1cmlkaWNhIEEzMRgwFgYDVQQLDA9B
+                        QyBWQUxJRCBCUkFTSUwxJjAkBgNVBAMMHVVOSUFPIE5BQ0lPTkFMIERPUyBFU1RVREFOVEVTMA0G
+                        CSqGSIb3DQEBBQUAAgQA8LmPMCIYDzIwMjUwNjE1MTQyMjMzWhgPMjAyNjA0MzAyMzU5NTlaM
+                        IHNMEYGBWBMAQoBMT0TOzA3MDgyMDAxMTI0NTczMjAyMzIxMDI1MDYxNTE3NDUxMjAwMDAwMDAw
+                        MDAwNzM4NTYyICAgICAgICAgIDB2BgVgTAECAjFtE2tJbnN0aXR1dG8gRmVkZXJhbCBkZSBFZHVj
+                        YWNhbywgQ2llbmNpYSBlU1VQRVJJT1IgICAgICAgRW5nZW5oYXJpYSAgICAgICAgICAgICAgICAg
+                        ICAgICBHb2lhbmlhICAgICAgICAgICAgICAgR08wCwYFYEwBBAMxAhMAMHcwMwYDVR0fBCwwKqEo
+                        hiZodHRwczovL3VuZS5kbmUudmMvdjEvY3JsL3VuZS5jcmw/aWQ9NTAdBgNVHSMEFoAUyNwQtL1L
+                        /3YrFdVHw2DXO1R7vc4wIQYIKwYBBQUHAQEEFTATBggrBgEFBQcwAgQHhgVIVFRQUzANBgkqhkiG
+                        9w0BAQUFAAOCAQEAMnRpVGJ4ZWFxTjhPL2ZuU3hrQU02cytKUDVOYlF2dUVsYkZYclRQZTlqWVJ0
+                        ZDhGSytGWTlhdFlJL3diaTVQRE9QWlBCNjZEZThKdmplc1NjeE5kWVVvQzJ2RVRLUFN0emxtQm1D
+                        Y0V4SDM1M0hTNTR5bEFOUGRGR3FoUGVpOXVubDFQYld1Nzc5SkxUTk5icHlYNGpIcEtUQ1ZONmFl
+                        VnZZOFoxZ0RsZU9pVkoJNTFSQWt4RUo5dGFBcUtZU0lPYk5LcTl1djVJWVd5RjUrRURTTWtCeGo1
+                        NkdmaU5WY0lkekxUOEk5b0xNVU5WMkt2c0hQYWtETytZcnQ2WEpwZWxrSFpYN1FhMHhZQVBjTjd3
+                        ajd2VlAwN3FtNkt1eVJYcFo0cGpFU1NodUtTZjA5c293aEM5Y0hIRDExTE4yNG1LUlVCTjlDQXdq
+                        OXJPNS92UVg1NzQ94=
+                    </span>
+                    <br><br>
+                    <p class="text-center">-----END CERTIFICATE-----</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="pt-4 main-footer pb-3">
+        <div class="container">
+            <h2 class="text-white font-title text-center mt-2 mb-4">meiaentrada.org.br</h2>
+            <nav class="row">
+                <div class="col-sm-6 col-md-3">
+                    <ul class="py-0 my-0">
+                        <li class="py-1"><a href="/">Home</a></li>
+                        <li class="py-1"><a href="/lei">Lei da Meia-entrada</a></li>
+                        <li class="py-1"><a href="/chaves-publicas">Chaves públicas</a></li>
+                        <li class="py-1"><a href="/perguntas-e-respostas">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <ul class="py-0 my-0">
+                        <li class="py-1"><a href="/noticias">Notícias</a></li>
+                        <li class="py-1"><a href="/termos">Termos de Uso e Política de Privacidade</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="text-center mt-4">
+                <span>@Meiaentrada.org.br - Todos os Direitos Reservados 2026</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
